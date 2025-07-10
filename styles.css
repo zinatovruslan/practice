@@ -1,173 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* === GLOBAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width: 320px;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #4d2323;
+/* === BODY === */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
 }
 
-.main-body{
-    margin:0 20px
+/* === CONTAINER & LAYOUT === */
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-header{
-    padding: 25px 0;
-    background-color: #829985;
-    height: 100px;
-}
-
-header nav{
-    float: right;
-    width: 50%;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul li{
-    display: flex;
-    align-items: center;
-}
-
-nav ul li a{
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 50px;
-}
-
-nav ul li a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background: #fff;
-    transition: width 0.5s ease;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-main{
-    position: relative;
-    bottom: 20px;
-    max-height: 100%;  
-}
-
-section h2{
-    color: #829985;
-    font-size: 25px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    font-weight: 100;
-}
-
-footer div, footer p{
-    color: #fff;
-}
-    
-section{
-    width: calc(50% - 20px);
-    padding: 10px;
-    padding-bottom: 35px;
-    border-bottom: 1px solid #672f2f;
-}
-
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 20px 0;
-    border-bottom: 10px solid #829985;
-}
-
-.main-header .photo {
-    width: 200px;
-    height: 200px;
-    object-fit: cover; 
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: relative;
-    left: 250px;
-    margin: 20px 0;
-}
-
-
-.main-header .info{
-    position: relative;
-    right: 220px;
-    line-height: 20px;
-    letter-spacing: 3px;
-}
-
-.main-header .info h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: 100;
-    margin-bottom: 10px;
-}
-
-.main-header .info hr{
-    width: 35%;
-    margin: 25px auto;
-    border: 1px solid #829985;
-}
-
-.main-header .info p {
-    font-size: 20px;
+.main-body {
+  margin: 0 20px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  position: relative;
+  bottom: 20px;
+  max-height: 100%;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .row section {
-    width: 48%;
+  width: 48%;
+}
+
+/* === HEADER === */
+header {
+  padding: 25px 0;
+  background-color: #829985;
+  height: 100px;
+}
+
+header nav {
+  float: right;
+  width: 80%;
+  position: relative;
+  left: 110px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  height: 3px;
+  width: 0;
+  background: #fff;
+  transition: width 1s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* === MAIN HEADER === */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 20px 0;
+  border-bottom: 10px solid #c7cdc8;
+}
+
+.main-header .photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  left: 250px;
+  margin: 20px 0;
+}
+
+.main-header .info {
+  position: relative;
+  right: 220px;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+
+.main-header .info h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.main-header .info hr {
+  width: 35%;
+  margin: 25px auto;
+  border: 1px solid #829985;
+}
+
+.main-header .info p {
+  font-size: 20px;
+}
+
+/* === SECTIONS === */
+section {
+  padding: 10px;
+  padding-bottom: 35px;
+}
+
+section:not(#Education):not(#English) {
+  border-bottom: 1px solid #672f2f;
+}
+
+section h2 {
+  color: #829985;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-weight: 100;
 }
 
 .row section h1 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #829985;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #829985;
 }
 
+/* === CONTACT SECTION === */
 #Contact {
   display: flex;
   flex-direction: column;
@@ -175,6 +176,9 @@ main {
   font-family: Arial, sans-serif;
 }
 
+#Skills ul li,
+#Courses ul li,
+#Projects ul li,
 #Contact ul li {
   list-style: none;
 }
@@ -186,27 +190,28 @@ main {
   color: #333;
 }
 
-.item .p{
-    color: #829985;
-    display: inline-block;
-}
-
 .item img {
   width: 20px;
   height: 20px;
   opacity: 0.6;
 }
 
+.row .data {
+  color: #829985;
+  display: inline-block;
+}
+
 .item a {
-  color: #6a8d7c; /* Тот же стиль, как на скрине */
+  color: #6a8d7c;
   text-decoration: none;
 }
 
-
-#English, #Education{
-    border-bottom: none;
+#Projects ul li a {
+  text-decoration: none;
+  color: #4d2323;
 }
 
+/* === FOOTER === */
 footer {
   width: 100%;
   height: 80px;
@@ -224,34 +229,29 @@ footer div {
   color: #fff;
 }
 
+footer div p,
 footer div a {
   color: #fff;
   text-decoration: none;
-  display: inline-block;
+  font-size: 20px;
+  line-height: 50px;
+  position: relative;
+  bottom: 3px;
 }
 
-footer div a{
-    position: relative;
-    bottom: 3px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 50px;
-}
-
-footer div a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    height: 2px;
-    width: 0;
-    background: #fff;
-    transition: width 1s ease;
+footer div a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 1s ease;
 }
 
 footer div a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .rs-logo {
@@ -264,4 +264,100 @@ footer div a:hover::after {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .main-header .photo {
+    left: 0;
+  }
+
+  .main-header .info {
+    right: 0;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row section {
+    width: 100%;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-header .photo {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+  }
+
+  .main-header .info h1 {
+    font-size: 24px;
+  }
+
+  .main-header .info p {
+    font-size: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .rs-logo {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main-header .info h1 {
+    font-size: 20px;
+  }
+
+  .main-header .info p {
+    font-size: 14px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  footer div a {
+    font-size: 16px;
+  }
 }

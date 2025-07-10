@@ -1,79 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#Contact">Contacts</a></li>
-                    <li><a href="#Summary">Summary</a></li>
-                    <li><a href="#Education">Education</a></li>
-                    <li><a href="#English">English</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="main-body">
-        <div class="main-header">
-            <img src="meme.jpg" class="photo" alt="my logo">
-            <div class="info">
-                <h1>RUSLAN  ZINATOV</h1>
-                <hr class="line">
-                <p>BEGINNER FRONT-END DEVELOPER</p>
-            </div>
-        </div>
-        <main>
-            <div class="first row">
-                <section id="Contact">
-                    <h2>CONTACTS</h2>
-                    <ul>
-                        <li class="item">
-                            <img src="1.svg" alt="location">
-                            <span>Taldyqorgan, Kazakhstan</span>
-                        </li>
-                        <li class="item">
-                            <img src="5.svg" alt="discord">
-                            <span>Discord: <span class="data">ruslan.rybka</span></span>
-                        </li>
-                        <li class="item">
-                            <img src="4.svg" alt="telegram">
-                            <span>Telegram: <span class="data">@rusya2020khan</span></span>
-                        </li>
-                    </ul>
-                </section>
 
-                <section id="Summary">
-                    <h2>SUMMARY</h2>
-                    <div>I’m a beginner in front-end development. I find it fascinating because creating something — in my case, a website — gives me more motivation with each accomplishment.</div>
-                </section>
-            </div>
-            <div class="second row">
-                <section id="Education">
-                    <h2>EDUCATION</h2>
-                    <div>Kazakh Britain Technical University</div>
-                </section>
-
-                <section id="English">
-                    <h2>ENGLISH</h2>
-                    <p>B1-Intermediate</p>
-                </section>
-            </div>
-        </main>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#Contact">Contacts</a></li>
+          <li><a href="#Summary">Summary</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Code">Code</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Courses">Courses</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#English">English</a></li>
+        </ul>
+      </nav>
     </div>
-    <footer>
-        <div>
-            <p>© 2022</p>
-            <a href="https://github.com/zinatovruslan" target="_blank">zinatovruslan</a>
-        </div>
-        <a class="rs-logo" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
-          <img src="rs_school-og.png" alt="RS School Logo">
-        </a>
-    </footer>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-body">
+    
+    <!-- Profile Header -->
+    <div class="main-header">
+      <img src="meme.jpg" class="photo" alt="my logo">
+      <div class="info">
+        <h1>RUSLAN ZINATOV</h1>
+        <hr class="line">
+        <p>BEGINNER FRONT-END DEVELOPER</p>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- Row 1 -->
+      <div class="first row">
+
+        <!-- Contact Section -->
+        <section id="Contact">
+          <h2>CONTACTS</h2>
+          <ul>
+            <li class="item">
+              <img src="1.svg" alt="location">
+              <span>Taldyqorgan, Kazakhstan</span>
+            </li>
+            <li class="item">
+              <img src="5.svg" alt="discord">
+              <span>Discord: <span class="data">ruslan.rybka</span></span>
+            </li>
+            <li class="item">
+              <img src="4.svg" alt="telegram">
+              <span>Telegram: <span class="data">rybka</span></span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Summary Section -->
+        <section id="Summary">
+          <h2>SUMMARY</h2>
+          <p>
+            I’m a beginner in front-end development. I find it fascinating because creating something — in my case, a website — gives me more motivation with each accomplishment.
+          </p>
+        </section>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="second row">
+
+        <!-- Skills Section -->
+        <section id="Skills">
+          <h2>SKILLS</h2>
+          <ul>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <span>HTML</span>
+            </li>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <span>CSS</span>
+            </li>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <span>Git</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Code Section -->
+        <section id="Code">
+          <h2>CODE</h2>
+          <pre><code>&lt;h1&gt;HTML code&lt;/h1&gt;
+&lt;p&gt;Hello, world!&lt;/p&gt;</code></pre>
+        </section>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="third row">
+
+        <!-- Courses Section -->
+        <section id="Courses">
+          <h2>COURSES</h2>
+          <ul>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <span>Itproger <span class="data">- HTML for beginner</span></span>
+            </li>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <span>Itproger <span class="data">- CSS for beginner</span></span>
+            </li>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <span>RS School <span class="data">- Web Development Foundation</span></span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="Projects">
+          <h2>PROJECTS</h2>
+          <ul>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <a href="#" target="_blank">CV#1</a>
+            </li>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <a href="#" target="_blank">CV#2</a>
+            </li>
+            <li class="item">
+              <img src="6.svg" alt="circle">
+              <a href="#" target="_blank">CV#3</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="fourth row">
+
+        <!-- Education Section -->
+        <section id="Education">
+          <h2>EDUCATION</h2>
+          <p>Kazakh Britain Technical University</p>
+        </section>
+
+        <!-- English Section -->
+        <section id="English">
+          <h2>ENGLISH</h2>
+          <p>B1 - Intermediate</p>
+        </section>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <p>© 2022</p>
+      <a href="https://github.com/zinatovruslan" target="_blank">zinatovruslan</a>
+    </div>
+    <a class="rs-logo" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+      <img src="rs_school-og.png" alt="RS School Logo">
+    </a>
+  </footer>
+
 </body>
 </html>
